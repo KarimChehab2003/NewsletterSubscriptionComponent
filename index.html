@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body style="background-color: #35374b;">
+  <main class="d-flex justify-content-center align-items-center" style="min-height: 100vh; height: 100%">
+    <section class="newspaperSubscription bg-white p-md-4 p-0 d-flex flex-column flex-md-row rounded-0">
+      <div class="container-text d-flex flex-column justify-content-center align-items-start mx-4 order-1 order-md-0">
+        <header class="text-capitalize my-3" style="font-family: 'Roboto-Bold'; color: #232742; font-size: 3rem;">stay updated!</header>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="list-unstyled">
+          <li class="my-2">
+            <img class="me-2" src="./assets/images/icon-list.svg" alt="listIcon">
+            <span>Product discovery and building what matters</span>
+          </li>
+          <li class="my-2">
+            <img class="me-2" src="./assets/images/icon-list.svg" alt="listIcon">
+            <span>Measuring to ensure updates are a success</span>
+          </li>
+          <li class="my-2">
+            <img class="me-2" src="./assets/images/icon-list.svg" alt="listIcon">
+            <span>And much more!</span>
+          </li>
+        </ul>
+        <form class="w-100">
+          <div class="d-flex justify-content-between align-items-center mb-2" style="font-family: 'Roboto-Bold'; font-size: 0.8rem;">
+            <label for="emailInput" class="form-label mb-0">Email address</label>
+            <p class="text-danger mb-0" id="invalid-feedback"></p>
+          </div>
+          <input type="email" class="form-control p-3 focus-ring" id="emailInput" placeholder="email@company.com">
+          <button class="btn btn-dark my-4 fw-medium w-100 p-3 coloredButton" id="subscribeBtn">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+      <picture class="ms-md-3 mb-0 order-0 order-md-1 d-flex justify-content-center">
+        <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 767.5px)" class="img-fluid">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="img-fluid">
+      </picture>
+    </section>
+    <section class="thanksContainer d-flex flex-column justify-content-center align-items-center rounded-0 bg-white p-md-4 p-0 rounded-0 d-none" style="max-width: 450px; height: 100vh;">
+      <div class="thanksContainer-content mx-3">
+        <img src="./assets/images/icon-success.svg" alt="icon-success" class="my-3" style="width: 3rem; height: 3rem;">
+        <p class="fs-1" style="color:#232742; font-family: 'Roboto-Bold';">Thanks for subscribing!</p>
+        <p>A confirmation email has been sent to <span class="fw-bold" id="emailEntered">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+        <button type="submit" class="btn btn-dark my-4 fw-medium w-100 p-3 coloredButton my-2" id="dismissButton">Dismiss message</button>
+      </div>
+      <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/KarimChehab2003">Karim Chehab</a>.
+      </footer>
+    </section>
+  </main>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

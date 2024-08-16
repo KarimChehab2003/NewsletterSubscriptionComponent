@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../assets/fonts/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+
+body {
+  font-family: "Roboto" !important;
+}
+
+#emailInput::placeholder {
+  color: #6c757d !important;
+}
+
+#emailInput {
+  --bs-focus-ring-color: black;
+  --bs-focus-ring-width: 1px;
+}
+
+#emailInput:focus {
+  border-color: black !important;
+}
+
+.coloredButton {
+  background-color: #232742 !important;
+  border-width: 0px;
+}
+
+.coloredButton:active {
+  background: linear-gradient(to right, #d4145a, #fbb03b);
+  box-shadow: 0px 15px 25px 0px rgba(252, 137, 77, 0.6);
+}
+
+@media (min-width: 768px) {
+  .newspaperSubscription,
+  .thanksContainer {
+    border-radius: 2rem !important;
+  }
+
+  .thanksContainer {
+    height: auto !important;
+  }
+}
